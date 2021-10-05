@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PDMI6_TP1.MainPage">
+
+    <StackLayout Padding="15">
+        <Label FontSize="Large"  Text="Aplicação Teste" HorizontalOptions="Center"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+
+            </Grid.ColumnDefinitions>
+
+            <Label FontSize="Large" Grid.Row="2" TextColor="White" Text="ID:"/>
+            <Entry Grid.Row="2" Grid.Column="1" x:Name="id"/>
+            <Label FontSize="Large" Grid.Row="3" TextColor="White" Text="Pass:"/>
+            <Entry Grid.Column="1" Grid.Row="3" x:Name="pass"/>
+
+        </Grid>
+        <StackLayout Margin="50">
+            <Button Text="OK" Clicked="OkClick"/>
+            <Button Text="Limpar" Clicked="LimparClick"/>
+            <Button Text="Créditos" Clicked="CreditosClick"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
