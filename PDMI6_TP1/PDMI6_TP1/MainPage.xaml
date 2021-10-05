@@ -19,7 +19,7 @@
             <Label FontSize="Large" Grid.Row="2" TextColor="White" Text="ID:"/>
             <Entry Grid.Row="2" Grid.Column="1" x:Name="id"/>
             <Label FontSize="Large" Grid.Row="3" TextColor="White" Text="Pass:"/>
-            <Entry Grid.Column="1" Grid.Row="3" x:Name="pass"/>
+            <Entry IsPassword="True" Grid.Column="1" Grid.Row="3" x:Name="pass"/>
 
         </Grid>
         <StackLayout Margin="50">
